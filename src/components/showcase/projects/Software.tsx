@@ -1,9 +1,8 @@
 import React from 'react';
-import portfolioLanding from '../../../assets/pictures/projects/software/portfolioLanding.png';
 import examProject from '../../../assets/pictures/projects/software/saga-repository.png';
 import ResumeDownload from '../ResumeDownload';
 
-export interface SoftwareProjectsProps {}
+export interface SoftwareProjectsProps { }
 
 const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
     return (
@@ -18,80 +17,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <br />
             <ResumeDownload />
             <br />
-            <div className="text-block">
-                <h2>truongvu05th01.netlify.app</h2>
-                <br />
-                <p>
-                    truongvu05th01.netlify.app is the website showcasing my personal projects—the very site you are visiting right now. Building this project was a source of great joy for me, while also presenting both technical and creative challenges. Early in 2026, I decided to create an interactive portfolio site to support my job search. I came up with the concept in early September and began development at the start of October. I worked on this site while simultaneously completing my final semester at school; the fact that you are reading this means the project is essentially complete!
-                </p>
-                <br />
-                <div className="captioned-image">
-                    <img
-                        src={portfolioLanding}
-                        alt="Portfolio landing page"
-                        style={styles.image}
-                    />
-                    <p style={styles.caption}>
-                        <sub>
-                            <b>Figure 1:</b> Personal introduction website
-                        </sub>
-                    </p>
-                </div>
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://truongvu05th01.netlify.app"
-                        >
-                            <p>
-                                <b>[3D Site]</b> - truongvu05th01.netlify.app
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://henryheffernan.vercel.app/"
-                        >
-                            <p>
-                                <b>[OS Site]</b> - henryheffernan.vercel.app
-                            </p>
-                        </a>
-                    </li>
-                    {/* GitHub links - Coming soon
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="#"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - 3D Site Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="#"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - OS Site Repository
-                            </p>
-                        </a>
-                    </li>
-                    */}
-                </ul>
-                <p>
-                    I'm skipping over a lot of details in exchange for brevity,
-                    but I do plan on doing a more in depth breakdown for those
-                    interested sometime in the future.
-                </p>
-            </div>
             <div className="text-block">
                 <h2>Online exam cheating detection system</h2>
                 <br />
@@ -117,11 +42,11 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <p>
                     Manage project timelines and handle large-scale video/image datasets for model training.
 
-Develop a real-time recognition architecture using YOLOv11 to detect unauthorized items (e.g., phones, documents) and the presence of a second person in the frame.
+                    Develop a real-time recognition architecture using YOLOv11 to detect unauthorized items (e.g., phones, documents) and the presence of a second person in the frame.
 
-Create algorithms to process webcam streams, extract frames, and automatically trigger fraud alerts via API.
+                    Create algorithms to process webcam streams, extract frames, and automatically trigger fraud alerts via API.
 
-Implement optimizations for model inference performance on GPU environments, ensuring real-time processing with minimal latency.
+                    Implement optimizations for model inference performance on GPU environments, ensuring real-time processing with minimal latency.
                     overall.
                 </p>
                 <br />

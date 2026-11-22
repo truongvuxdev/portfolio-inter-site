@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
-import art from '../../assets/pictures/projects/art.gif';
+import photos from '../../assets/pictures/projects/photos.gif';
 import music from '../../assets/pictures/projects/music.gif';
 
-export interface ProjectsProps {}
+export interface ProjectsProps { }
 
 interface ProjectBoxProps {
     icon: string;
@@ -93,10 +93,10 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     route="music"
                 />
                 <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
+                    icon={photos}
+                    iconStyle={styles.photosIcon}
+                    title="Photos"
+                    subtitle="GALLERY"
                     route="art"
                 />
             </div>
@@ -145,9 +145,9 @@ const styles: StyleSheetCSS = {
         width: 48,
         height: 48,
     },
-    artIcon: {
-        width: 21 * 2,
-        height: 37 * 2,
+    photosIcon: {
+        width: 48,
+        height: 48,
     },
 };
 
