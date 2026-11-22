@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 // @ts-ignore
 import house from '../../../assets/audio/house_master.mp3';
 // @ts-ignore
+import lnlye from '../../../assets/audio/lnlye.mp3';
+// @ts-ignore
 import edge from '../../../assets/audio/edge_unmastered.mp3';
 // @ts-ignore
 import loThuongNhau from '../../../assets/audio/lothuongnhau.mp3';
-import houseProject from '../../../assets/pictures/projects/audio/houseProject.png';
+// @ts-ignore
+import cmw from '../../../assets/pictures/projects/audio/cmw.webp';
+import lnlyeProject from '../../../assets/pictures/projects/audio/lnlye.jpg';
 import timEmProject from '../../../assets/pictures/projects/audio/timEm.png';
-import loThuongNhauImage from '../../../assets/pictures/projects/audio/loThuongNhau.png';
+import loThuongNhauImage from '../../../assets/pictures/projects/audio/loThuongNhau.jpg';
 import { MusicPlayer } from '../../general';
 
 export interface MusicProjectsProps {}
@@ -17,9 +21,17 @@ const songs = [
         title: 'Come My Way',
         subtitle: 'SonTung M-TP',
         src: house,
-        image: houseProject,
+        image: cmw,
         description:
             'There is so much I love about this piece. I am particularly proud of its structure and three-dimensional contrast: the playful, optimistic energy of the opening and the first climax, shifting into an emotionally charged and exhilarating transition, before plunging into the darkness of the finale and the final climax.',
+    },
+    {
+        title: 'Lam nguoi luon yeu em',
+        subtitle: 'Son Tung MTP',
+        src: lnlye,
+        image: lnlyeProject,
+        description:
+            '"Làm Người Luôn Yêu Em" by Sơn Tùng M-TP is a heartwarming pop ballad that showcases a softer, more vulnerable side of the Vietnamese superstar. Stripping away the high-energy beats of his usual hits, the track relies on a gentle, melodic arrangement that lets his warm and sincere vocals take center stage.\n\nLyrically, the song is a pure declaration of unconditional devotion—a quiet promise to stay by someone\'s side through every high and low. With its soothing rhythm and deeply relatable message, "Làm Người Luôn Yêu Em" feels like a comforting embrace, making it a timeless staple for any romantic playlist.',
     },
     {
         title: 'Tim Em',
@@ -73,7 +85,13 @@ I struggled and started over several times, unable to find a visual style and tr
 
             {songs.map((song, index) => (
                 <React.Fragment key={song.title}>
-                    {index === 1 && (
+                    {song.title === 'Lam nguoi luon yeu em' && (
+                        <>
+                            <h2>Lam Nguoi Luon Yeu Em?</h2>
+                            <br />
+                        </>
+                    )}
+                    {song.title === 'Tim Em' && (
                         <>
                             <h2>Tim Em?</h2>
                             <br />
@@ -105,7 +123,7 @@ I struggled and started over several times, unable to find a visual style and tr
                             </sub>
                         </p>
                     </div>
-                    <p>{song.description}</p>
+                    <p style={{ whiteSpace: 'pre-line' }}>{song.description}</p>
                     <br />
                 </React.Fragment>
             ))}
@@ -143,7 +161,7 @@ I struggled and started over several times, unable to find a visual style and tr
                 <img src={loThuongNhauImage} alt="Lo thuong nhau" />
                 <p>
                     <sub>
-                        <b>Figure 3 :</b> Lo thuong nhau :)
+                        <b>Figure 4:</b> Lo thuong nhau :)
                     </sub>
                 </p>
             </div>

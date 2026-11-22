@@ -1,7 +1,7 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-export interface ArtProjectsProps {}
+export interface ArtProjectsProps { }
 
 // Automatically load all images placed in src/assets/pictures/projects/photos/
 const loadPhotos = (): { src: string; name: string }[] => {
